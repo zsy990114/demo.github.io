@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>canvas</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * {
+            margin: 0;
+            padding: 0
+        }
+        
+        #canvas {}
+        
+        #cont {
+            padding: 10px;
+            position: fixed;
+            top: 100px;
+            left: 10px;
+            background: rgba(255, 255, 255, 0.8)
+        }
+        
+        #cont input {
+            color: black
+        }
+    </style>
+</head>
+
+<body>
+    <canvas id="canvas"></canvas>
+    <div id="cont">
+        <label><input name="line" type="radio" value="1" checked />有链接线</label>
+        <label><input name="line" type="radio" value="0" />无链接线</label>
+        <br/>
+        <label><input name="shen" type="radio" value="1"  />中间扩散开</label>
+        <label><input name="shen" type="radio" value="0" checked />中间扩散关</label>
+    </div>
+    <script src="./js/Yuan.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
